@@ -60,7 +60,8 @@ public class taskScheduler621 {
         }
         int time = (maxCount-1)*(n+1)+num;
         /**
-         *返回答案
+         *返回答案，time出现比长度还短的原因是你已经把任务
+         *插进去了但实际上并没有算上。
          */
         return Math.max(time,tasks.length);
 
